@@ -1,0 +1,30 @@
+:root {
+	--sidebar-bg: #1892d3;
+	--card-border: #efb529;
+	--main-bg: #e1e8f0;
+	--text-clr: #161717;
+	--content-bg: #e0e7ee;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
