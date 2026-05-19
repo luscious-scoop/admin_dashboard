@@ -12,5 +12,539 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Admin Dashboard</title>
 	</head>
-	<body></body>
+	<body>
+		<div class="main-container">
+			<div class="sidebar">
+				<div class="dashboard">
+					<div class="dashboard-icon">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							class="dash-icon"
+						>
+							<title>view-dashboard</title>
+							<path
+								d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"
+							/>
+						</svg>
+					</div>
+					<span>Dashboard</span>
+				</div>
+				<div class="sidebar-links">
+					<ul>
+						<li>
+							<div class="icon">
+								<svg
+									class="home-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>home</title>
+									<path
+										d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"
+									/>
+								</svg>
+							</div>
+							<span>Home</span>
+						</li>
+
+						<li>
+							<div class="icon">
+								<svg
+									class="profile-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>card-account-mail-outline</title>
+									<path
+										d="M22,3H2A2,2 0 0,0 0,5V19A2,2 0 0,0 2,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M22,19H2V5H22V19M21,6H14V11H21V6M20,8L17.5,9.75L15,8V7L17.5,8.75L20,7V8M9,12A3,3 0 0,0 12,9A3,3 0 0,0 9,6A3,3 0 0,0 6,9A3,3 0 0,0 9,12M9,8A1,1 0 0,1 10,9A1,1 0 0,1 9,10A1,1 0 0,1 8,9A1,1 0 0,1 9,8M15,16.59C15,14.09 11.03,13 9,13C6.97,13 3,14.09 3,16.59V18H15V16.59M5.5,16C6.22,15.5 7.7,15 9,15C10.3,15 11.77,15.5 12.5,16H5.5Z"
+									/>
+								</svg>
+							</div>
+							<span>Profile</span>
+						</li>
+						<li>
+							<div class="icon">
+								<svg
+									class="message-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 22 22"
+								>
+									<title>message</title>
+									<path
+										d="M2 1H20V2H21V16H20V17H5V18H4V19H3V20H2V21H1V2H2V1M3 3V16H4V15H19V3H3Z"
+									/>
+								</svg>
+							</div>
+							<span>Message</span>
+						</li>
+						<li>
+							<div class="icon">
+								<svg
+									class="history-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 22 22"
+								>
+									<title>clock-fill</title>
+									<path
+										d="M13 15H14V14H15V13H14V12H13V11H12V5H10V12H11V13H12V14H13M15 21H7V20H5V19H4V18H3V17H2V15H1V7H2V5H3V4H4V3H5V2H7V1H15V2H17V3H18V4H19V5H20V7H21V15H20V17H19V18H18V19H17V20H15Z"
+									/>
+								</svg>
+							</div>
+							<span>History</span>
+						</li>
+						<li>
+							<div class="icon">
+								<svg
+									class="task-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>note-multiple</title>
+									<path
+										d="M16,9H21.5L16,3.5V9M7,2H17L23,8V18A2,2 0 0,1 21,20H7C5.89,20 5,19.1 5,18V4A2,2 0 0,1 7,2M3,6V22H21V24H3A2,2 0 0,1 1,22V6H3Z"
+									/>
+								</svg>
+							</div>
+							<span>Tasks</span>
+						</li>
+						<li>
+							<div class="icon">
+								<svg
+									class="comunity-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>account-group</title>
+									<path
+										d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"
+									/>
+								</svg>
+							</div>
+							<span>Communities</span>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="icon">
+								<svg
+									class="settings-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>cog</title>
+									<path
+										d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"
+									/>
+								</svg>
+							</div>
+							<span>Settings</span>
+						</li>
+						<li>
+							<div class="icon">
+								<svg
+									class="support-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>file-question</title>
+									<path
+										d="M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6M13,3.5L18.5,9H13V3.5M12,11A3,3 0 0,1 15,14C15,15.88 12.75,16.06 12.75,17.75H11.25C11.25,15.31 13.5,15.5 13.5,14A1.5,1.5 0 0,0 12,12.5A1.5,1.5 0 0,0 10.5,14H9A3,3 0 0,1 12,11M11.25,18.5H12.75V20H11.25V18.5Z"
+									/>
+								</svg>
+							</div>
+							<span>Support</span>
+						</li>
+						<li>
+							<div class="icon">
+								<svg
+									class="privacy-icon"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>shield-check</title>
+									<path
+										d="M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z"
+									/>
+								</svg>
+							</div>
+							<span>Privacy</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header">
+				<div class="header-row-1">
+					<div class="search-container">
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+							>
+								<title>magnify</title>
+								<path
+									d="M9.5,4C13.09,4 16,6.91 16,10.5C16,12.12 15.41,13.6 14.43,14.73L20.08,20.38L19.37,21.09L13.72,15.44C12.59,16.41 11.11,17 9.5,17C5.91,17 3,14.09 3,10.5C3,6.91 5.91,4 9.5,4M9.5,5C6.46,5 4,7.46 4,10.5C4,13.54 6.46,16 9.5,16C12.54,16 15,13.54 15,10.5C15,7.46 12.54,5 9.5,5Z"
+								/>
+							</svg>
+						</div>
+						<div class="search-bar">
+							<input type="text" />
+						</div>
+					</div>
+					<div class="user-info">
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+							>
+								<title>bell-ring</title>
+								<path
+									d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z"
+								/>
+							</svg>
+						</div>
+						<div class="image-container">
+							<img src="" alt="" />
+						</div>
+						<div class="username">
+							<p>Luscious scoop</p>
+						</div>
+					</div>
+				</div>
+				<div class="header-row-2">
+					<div class="introduction">
+						<div class="image-container">
+							<img src="" alt="" />
+						</div>
+						<div class="user-text">
+							<p>Hi there</p>
+							<p>Luscious scoop (@scoop)</p>
+						</div>
+					</div>
+					<div class="buttons">
+						<button>New</button>
+						<button>Upload</button>
+						<button>Share</button>
+					</div>
+				</div>
+			</div>
+			<div class="hero">
+				<div class="first-column">
+					<h2>Your Projects</h2>
+					<div class="hero-cards">
+						<div class="card">
+							<h2>Super Cool Project</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Maxime explicabo ad, quo quia
+								blanditiis cumque eligendi voluptatum minima
+								nesciunt impedit, ut ipsum aspernatur ducimus
+								nulla, illo sed corrupti omnis beatae.
+							</p>
+							<div class="hero-icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>star-plus</title>
+									<path
+										d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>eye-plus</title>
+									<path
+										d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,17.94 13.08,17.38 13.24,16.84C12.83,16.94 12.42,17 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12C17,12.29 16.97,12.59 16.92,12.88C17.58,12.63 18.29,12.5 19,12.5C20.17,12.5 21.31,12.84 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>source-fork</title>
+									<path
+										d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z"
+									/>
+								</svg>
+							</div>
+						</div>
+						<div class="card">
+							<h2>Super Cool Project</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Maxime explicabo ad, quo quia
+								blanditiis cumque eligendi voluptatum minima
+								nesciunt impedit, ut ipsum aspernatur ducimus
+								nulla, illo sed corrupti omnis beatae.
+							</p>
+							<div class="hero-icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>star-plus</title>
+									<path
+										d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>eye-plus</title>
+									<path
+										d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,17.94 13.08,17.38 13.24,16.84C12.83,16.94 12.42,17 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12C17,12.29 16.97,12.59 16.92,12.88C17.58,12.63 18.29,12.5 19,12.5C20.17,12.5 21.31,12.84 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>source-fork</title>
+									<path
+										d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z"
+									/>
+								</svg>
+							</div>
+						</div>
+						<div class="card">
+							<h2>Super Cool Project</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Maxime explicabo ad, quo quia
+								blanditiis cumque eligendi voluptatum minima
+								nesciunt impedit, ut ipsum aspernatur ducimus
+								nulla, illo sed corrupti omnis beatae.
+							</p>
+							<div class="hero-icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>star-plus</title>
+									<path
+										d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>eye-plus</title>
+									<path
+										d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,17.94 13.08,17.38 13.24,16.84C12.83,16.94 12.42,17 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12C17,12.29 16.97,12.59 16.92,12.88C17.58,12.63 18.29,12.5 19,12.5C20.17,12.5 21.31,12.84 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>source-fork</title>
+									<path
+										d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z"
+									/>
+								</svg>
+							</div>
+						</div>
+						<div class="card">
+							<h2>Super Cool Project</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Maxime explicabo ad, quo quia
+								blanditiis cumque eligendi voluptatum minima
+								nesciunt impedit, ut ipsum aspernatur ducimus
+								nulla, illo sed corrupti omnis beatae.
+							</p>
+							<div class="hero-icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>star-plus</title>
+									<path
+										d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>eye-plus</title>
+									<path
+										d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,17.94 13.08,17.38 13.24,16.84C12.83,16.94 12.42,17 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12C17,12.29 16.97,12.59 16.92,12.88C17.58,12.63 18.29,12.5 19,12.5C20.17,12.5 21.31,12.84 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>source-fork</title>
+									<path
+										d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z"
+									/>
+								</svg>
+							</div>
+						</div>
+						<div class="card">
+							<h2>Super Cool Project</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Maxime explicabo ad, quo quia
+								blanditiis cumque eligendi voluptatum minima
+								nesciunt impedit, ut ipsum aspernatur ducimus
+								nulla, illo sed corrupti omnis beatae.
+							</p>
+							<div class="hero-icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>star-plus</title>
+									<path
+										d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>eye-plus</title>
+									<path
+										d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,17.94 13.08,17.38 13.24,16.84C12.83,16.94 12.42,17 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12C17,12.29 16.97,12.59 16.92,12.88C17.58,12.63 18.29,12.5 19,12.5C20.17,12.5 21.31,12.84 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>source-fork</title>
+									<path
+										d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z"
+									/>
+								</svg>
+							</div>
+						</div>
+						<div class="card">
+							<h2>Super Cool Project</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Maxime explicabo ad, quo quia
+								blanditiis cumque eligendi voluptatum minima
+								nesciunt impedit, ut ipsum aspernatur ducimus
+								nulla, illo sed corrupti omnis beatae.
+							</p>
+							<div class="hero-icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>star-plus</title>
+									<path
+										d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C14.9 12 12.4 14.3 12 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>eye-plus</title>
+									<path
+										d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,17.94 13.08,17.38 13.24,16.84C12.83,16.94 12.42,17 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12C17,12.29 16.97,12.59 16.92,12.88C17.58,12.63 18.29,12.5 19,12.5C20.17,12.5 21.31,12.84 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+								>
+									<title>source-fork</title>
+									<path
+										d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z"
+									/>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="second-column">
+					<div class="announement">
+						<h2>announement</h2>
+						<div class="anncounment-tab">
+							<div class="tab-text">
+								<h2>Maintanence</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur
+									adipisicing elit. Eaque commodi inventore
+									porro sapiente alias vel in fugit, assumenda
+									optio corporis dolore culpa cum ad quam
+									maiores nemo odit amet. Fugiat?
+								</p>
+							</div>
+							<div class="tab-text">
+								<h2>Maintanence</h2>
+								<p>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Vero, at? In totam quae
+									quam, rerum voluptatibus culpa earum impedit
+									ipsa atque vitae possimus obcaecati eaque
+									iusto quia ipsum perferendis autem?
+								</p>
+							</div>
+							<div class="tab-text">
+								<h2>Maintanence</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur
+									adipisicing elit. Perspiciatis tenetur
+									debitis totam sunt consequatur laboriosam
+									adipisci! Quos, illo. Non earum consequuntur
+									quae, quo eaque nulla iure pariatur ad
+									praesentium ducimus!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="trending">
+						<div class="user-card">
+							<div class="image-container">
+								<img src="" alt="" />
+							</div>
+							<div class="text">
+								<p>scoop</p>
+								<p>dashboard</p>
+							</div>
+						</div>
+						<div class="user-card">
+							<div class="image-container">
+								<img src="" alt="" />
+							</div>
+							<div class="text">
+								<p>scoop</p>
+								<p>dashboard</p>
+							</div>
+						</div>
+						<div class="user-card">
+							<div class="image-container">
+								<img src="" alt="" />
+							</div>
+							<div class="text">
+								<p>scoop</p>
+								<p>dashboard</p>
+							</div>
+						</div>
+						<div class="user-card">
+							<div class="image-container">
+								<img src="" alt="" />
+							</div>
+							<div class="text">
+								<p>scoop</p>
+								<p>dashboard</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

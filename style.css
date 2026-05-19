@@ -21,10 +21,69 @@ svg {
 	display: block;
 	max-width: 100%;
 }
-
+/* span {
+	display: block;
+} */
+li {
+	list-style-type: none;
+}
 input,
 button,
 textarea,
 select {
 	font: inherit;
+}
+svg {
+	width: 5%;
+}
+
+body {
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 0.5fr 2fr;
+}
+.sidebar {
+	background-color: var(--sidebar-bg);
+	grid-row: span 3;
+	color: white;
+	font-weight: bold;
+}
+.sidebar svg {
+	fill: white;
+}
+.sidebar ul > li {
+	/* border: 2px solid red; */
+	display: grid;
+	grid-template-columns: repeat(2, min(10%, 70px));
+	align-items: center;
+	font-size: 1.5rem;
+	column-gap: 1rem;
+}
+.sidebar ul > li > * {
+	margin-bottom: 1rem;
+}
+.sidebar ul {
+	padding: 16px;
+	margin-top: 20px;
+}
+.sidebar li svg {
+	width: 1.5rem;
+}
+
+.sidebar .dashboard {
+	/* border: 2px solid red; */
+	display: grid;
+	grid-template-columns: repeat(2, min(20%, 70px));
+	align-items: center;
+	font-size: 1.5rem;
+	column-gap: 5px;
+	padding: 10px;
+}
+
+.dashboard svg {
+	width: 100%;
 }
