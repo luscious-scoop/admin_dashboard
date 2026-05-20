@@ -275,13 +275,50 @@ body {
 
 .user-card {
 	display: grid;
-	grid-template-columns: 50px 1fr;
+	grid-template-columns: 70px 60%;
 	border: 2px solid red;
 	column-gap: 20px;
 	align-items: center;
+	align-content: center;
 }
-.user-card img {
-	width: 100%;
+
+.user-card > div:first-child {
 	border-radius: 50%;
-	border: 2px solid yellow;
+}
+.user-card:first-child > div:first-child {
+	background-color: gray;
+	background-image: url("images/tom.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 70px;
+	background-size: contain;
+}
+
+.user-card:nth-child(2) div:first-child {
+	background-color: var(--card-border);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 70px;
+	background-image: url("images/cat.png");
+	background-size: contain;
+	border-radius: 50%;
+}
+.user-card:nth-child(3) div:first-child {
+	height: 70px;
+	background-color: grey;
+	background-image: url("images/hero.webp");
+	background-size: contain;
+	background-position: center;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+}
+
+.user-card:nth-child(4) div:first-child {
+	height: 70px;
+	background-image: url("images/penguin.webp");
+	background-size: contain;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fda3ad;
 }
