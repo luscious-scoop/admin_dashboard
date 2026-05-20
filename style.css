@@ -131,7 +131,7 @@ body {
 
 .user-info {
 	display: grid;
-	grid-template-columns: 5% 18% 40%;
+	grid-template-columns: 5% 50px 40%;
 	align-items: center;
 	/* border: 2px solid red; */
 	justify-content: center;
@@ -146,6 +146,9 @@ body {
 .user-info img {
 	border-radius: 50%;
 }
+.header img {
+	background-color: var(--card-border);
+}
 
 .header-row-2 {
 	/* border: 2px solid yellow; */
@@ -156,9 +159,10 @@ body {
 .introduction {
 	/* border: 2px solid rebeccapurple; */
 	display: grid;
-	grid-template-columns: 10% 40%;
+	grid-template-columns: 50px 40%;
 	align-items: center;
 	padding: 0px 15px;
+	column-gap: 10px;
 }
 
 .introduction img {
@@ -232,4 +236,52 @@ body {
 }
 .hero-icons svg {
 	fill: gray;
+}
+
+.announcement,
+.trending {
+	background-color: #ffffff;
+}
+
+.second-column {
+	border: 2px solid red;
+}
+
+.tab-text {
+	padding: 10px 20px;
+	border-bottom: 2px solid gray;
+}
+.tab-text:last-child {
+	border: none;
+}
+.tab-text p:nth-child(2) {
+	color: gray;
+	font-weight: bold;
+}
+
+.tab-text p:first-child {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.announcement {
+	padding: 20px 16px;
+}
+.trending {
+	margin-top: 15rem;
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.user-card {
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	border: 2px solid red;
+	column-gap: 20px;
+	align-items: center;
+}
+.user-card img {
+	width: 100%;
+	border-radius: 50%;
+	border: 2px solid yellow;
 }
