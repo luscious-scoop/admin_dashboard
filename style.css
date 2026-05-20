@@ -260,13 +260,21 @@ body {
 	font-weight: bold;
 }
 
-.announcement {
+.announcement,
+.trending {
+	box-shadow: 0px 8px 12px hsla(0, 0%, 0%, 0.418);
+	border-radius: 8px;
 	padding: 20px 16px;
 }
 .trending {
-	margin-top: 15rem;
+	border: 2px solid red;
+	margin-top: 5rem;
 	display: grid;
 	grid-template-rows: repeat(4, 1fr);
+}
+
+.second-column > h2:first-child {
+	margin-bottom: 10px;
 }
 
 .user-card {
@@ -277,7 +285,9 @@ body {
 	align-items: center;
 	align-content: center;
 }
-
+.user-card .text p:nth-child(2) {
+	color: gray;
+}
 .user-card > div:first-child {
 	height: 70px;
 	border-radius: 50%;
